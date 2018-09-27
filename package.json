@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/abusedmedia/poc-express-api-heroku#readme",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.3"
   }
 }
