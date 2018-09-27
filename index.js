@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 3131
 
 app.get('/api', (req, res) => {
   res.status(200).json({api: 'version 1'})
@@ -7,4 +8,4 @@ app.get('/api', (req, res) => {
 
 app.use((req, res) => res.status(404).send({code: '404', message: 'no found'}))
 
-app.listen(3000, () => console.log('server started'))
+app.listen(port, () => console.log('server started on port', port))
